@@ -22,7 +22,7 @@
 	</script>
 
 	<!-- longitude -->
-	<script src="./js/bonk.js"></script>
+	<script src="https://lngtd.com/bonk.js"></script>
 
 
 	<meta charset="utf-8">
@@ -36,7 +36,7 @@
     <script>
 
         function getHeavPC(){
-            fetch('./js/playercount.json')
+            fetch('https://hitbox.io/scripts/playercount.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Hitbox.io playercount fetch failed');
@@ -268,8 +268,30 @@
 </style>
 
 <div id="bonkioheader">
+
+	<div id="gamethumbbox">
+		<a href="https://hitbox.io" target="blank">
+			<img src="graphics/tt/hitboxicon2x.png" width="140px" height="90px" class="shake">
+			<span class="thumbbox_name">hitbox.io</span>
+			<span id="header_heav_playercount" class="thumbbox_count">(? online)</span>
+		</a>
+	</div>
+	<div id="gamethumbbox">
+		<a href="https://bonk.io" target="blank">
+			<img src="graphics/tt/bonkgameicon3.png" class="shake">
+			<span class="thumbbox_name">bonk.io</span>
+			<span id="header_bonk_playercount" class="thumbbox_count">(? online)</span>
+		</a>
+	</div>
+	<div id="gamethumbbox" style="display: none;">
+		<a href="https://supercarstadium.com" target="blank">
+			<img src="graphics/tt/caricon.png" class="shake">
+			<span class="thumbbox_name">Supercar Stadium</span>
+			<span id="header_car_playercount" class="thumbbox_count">(? online)</span>
+		</a>
+	</div>
 	<div id="bonkiobugemail">
-		issues? <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d6f786a7e4d6f626366236462">[email&#160;protected]</a>
+		issues? <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2b0a7b5a192b0bdbcb9fcbbbd">[email&#160;protected]</a>
 	</div>
 </div>
 
@@ -362,7 +384,8 @@
 
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"5826b4660bc34847aa5df97a96079334","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
 
 
 
